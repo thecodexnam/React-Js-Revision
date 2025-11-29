@@ -1,3 +1,7 @@
+function Fruit(name){
+  alert("your Fruit Name is " + name)
+}
+
 function App() {
 
   let age = 20;
@@ -21,7 +25,11 @@ function App() {
     else{
       return "Not Found"
     }
-  } 
+  }
+  
+  // const Fruit = (name) =>{
+  //   alert(name);
+  // }
 
   return (
     <div>
@@ -30,6 +38,8 @@ function App() {
       <h1>{obj.email}</h1>
       <h1>{arr[2]}</h1>
       <img src={path}/>
+      <button onClick={()=>Fruit("Apple")}>Apple</button>
+      <button onClick={()=>Fruit("Banana")}>Banana</button>
       
 
       {/* <h1>Naman Yadav</h1>
