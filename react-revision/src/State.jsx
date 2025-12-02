@@ -1,18 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const State = () => {
-    let fruit = "Banana";
+    const[fruit,setFruit] = useState("Banana")
     
-    const handleName = () =>{
-       fruit ="Apple"
+    const handleFruit = ()=>{
+        setFruit("Apple")
     }
-
 
   return (
     <>
     <h1>State in Js</h1>
-    <h2>{fruit}</h2>
-    <button onClick={handleName}>Change the fruit name</button>
+    <h1>{fruit}</h1>
+    <button onClick={handleFruit}>Chanage fruit Name</button>
     </>
   )
 }
