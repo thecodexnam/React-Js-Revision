@@ -59,21 +59,32 @@
 
 // export default App;
 
-import React, { useState } from 'react'
-import User from './User';
+// import React, { useState } from 'react'
+// import User from './User';
 
-const App = () => {
-  const[display,setDisplay] = useState(false);
-  return (
-    <div>
+// const App = () => {
+//   const[display,setDisplay] = useState(false);
+//   return (
+//     <div>
       
-      <h1>Toggle in React Js</h1>
-      <button onClick={()=>setDisplay(!display)}>Toggle</button>
-      {
-        display?<User/>:null
-      }
-    </div>
+//       <h1>Toggle in React Js</h1>
+//       <button onClick={()=>setDisplay(!display)}>Toggle</button>
+//       {
+//         display?<User/>:null
+//       }
+//     </div>
+//   )
+// }
+
+export default App
+
+const App = () =>{
+  
+  return(
+    <> 
+
+    </>
   )
 }
 
-export default App
+
