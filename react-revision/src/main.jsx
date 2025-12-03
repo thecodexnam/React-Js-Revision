@@ -6,9 +6,9 @@ import Counter from './Counter.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App/> */}
-    <State/>
-    <Counter/>
+    <App/>
+    {/* <State/>
+    <Counter/> */}
   </StrictMode>,
 )
  
