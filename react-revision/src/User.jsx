@@ -1,10 +1,12 @@
-import React from 'react'
-
-const User = () => {
-  return (<>
-    <h1>Naman Yadav</h1>
-  </>
+const User = ({user}) =>{
+  
+  return(
+    <div>
+      <hr/>
+      <h1>User Componet</h1>
+      <h1>Your name is {user.name} and your age is {user.age} Your gmail is {user.email} and address is {user.address}</h1>
+    </div>
   )
 }
 
-export default User
+export default User;
