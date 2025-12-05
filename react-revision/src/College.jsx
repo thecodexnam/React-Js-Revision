@@ -1,10 +1,10 @@
 import React from 'react'
 
-const College = ({names}) => {
+const College = ({name}) => {
     
   return (
     <div>
-        <h1>College :{names[2]} </h1>
+        <h1>College :{name} </h1>
     </div>
   )
 }
