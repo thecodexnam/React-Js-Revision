@@ -1,11 +1,26 @@
 import React from 'react'
 import User from './User'
+import Wrapper from './Wrapper'
 
 const App = () => {
   return (
     <div>
       <h1>Props in React JS</h1>
+      <Wrapper color="Orange">
+        <h1>Hello I'm Wrapper</h1>
+      </Wrapper>
 
+      <Wrapper>
+        <h1>Hello, I'm Naman Yadav</h1>
+        <h1 style={{color:"blue"}}>Hello i'm CodeXnam</h1>
+      </Wrapper>
+
+
+      {/* <User name='Naman Yadav'/>
+      <User/>
+      <User name='Rohan Mathur'/>
+      <User name='Vishnu Dubey'/>
+      <User/> */}
       
       {/* <User name="Naman Yadav"/>
       <User name = "Rohan Mathur"/>

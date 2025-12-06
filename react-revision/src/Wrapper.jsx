@@ -1,7 +1,7 @@
-const Wrapper = () =>{
+const Wrapper = ({children,color="Red"}) =>{
     return(
-        <div>
-            <h1>Hello I'm Wrapper</h1>
+        <div style={{color:color,border:"3px solid black",width:"300px",padding:"10px",margin:"10px"}}>
+            {children}
         </div>
     )
 }
