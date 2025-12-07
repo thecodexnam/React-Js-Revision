@@ -7,14 +7,25 @@ const App = () => {
   const[password,setPassword] = useState('');
   const[email,setEmail] = useState('');
 
+  const hanadleclear = () =>{
+    setEmail('')
+    setPassword('')
+  }
+
+ 
   return (
       <div>
         <h1>Controlled Component</h1>
         <form>
           <input type='text' value={name} onChange={(e)=>setName(e.target.value)} placeholder='Enter Name'/><br/><br/>
-          <input type='password' value={password}  placeholder='Enter password'/><br/><br/>
-          <input type='email' value={email} placeholder='Enter email'/><br/><br/>
+          <input type='password' value={password}  onChange={(e)=>setPassword(e.target.value)} placeholder='Enter password'/><br/><br/>
+          <input type='email' value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Enter email'/><br/><br/>
           <button>Submit</button>
+          <button type='button' onClick={hanadleclear}>clear</button>
+
+          <h1>{name}</h1>
+          <h1>{password}</h1>
+          <h1>{email}</h1>
         </form>
 
 
