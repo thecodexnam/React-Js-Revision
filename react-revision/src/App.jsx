@@ -3,22 +3,24 @@ import User from './User'
 import Wrapper from './Wrapper'
 
 const App = () => {
-  const[name,setName]=useState("")
-  const[age,setage]=useState("")
-  const[address,setaddress]=useState("")
-  const [showOutput, setShowOutput] = useState(false);
-
-  const handleOutput = () =>{
-    if(!name || !age || !address){
-      alert("Please Fill all fields before submiting")
-      return;
-    }
-    setShowOutput(true)
-  }
+  const[name,setName] = useState('');
+  const[password,setPassword] = useState('');
+  const[email,setEmail] = useState('');
 
   return (
       <div>
-        <h1>Task in React JS</h1>
+        <h1>Controlled Component</h1>
+        <form>
+          <input type='text' value={name} onChange={(e)=>setName(e.target.value)} placeholder='Enter Name'/><br/><br/>
+          <input type='password' value={password}  placeholder='Enter password'/><br/><br/>
+          <input type='email' value={email} placeholder='Enter email'/><br/><br/>
+          <button>Submit</button>
+        </form>
+
+
+
+
+        {/* <h1>Task in React JS</h1>
         <div style={{margin:"10px",padding:"10px"}}>
         <input type='text' value={name}  onChange={(e)=>setName(e.target.value)} placeholder='Enter Name'/> <br/>
         <input type='number' value={age} onChange={(e)=>setage(e.target.value)} placeholder='Enter Age'/> <br/>
@@ -33,7 +35,7 @@ const App = () => {
           <h2>Your Age is: {age}</h2>
           <h2>Your Address is: {address}</h2>
         </>
-        )}
+        )} */}
 
 
 
