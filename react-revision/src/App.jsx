@@ -9,7 +9,8 @@ const App = () => {
 
   const hanadleclear = () =>{
     setEmail('')
-    setPassword('')
+    setPassword('') 
+    setName('')
   }
 
  
