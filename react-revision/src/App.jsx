@@ -11,8 +11,7 @@ const App = () => {
     setEmail('')
     setPassword('') 
     setName('')
-  }
-
+  } 
  
   return (
       <div>
