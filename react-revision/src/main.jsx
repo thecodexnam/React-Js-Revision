@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')).render(
     {/* <State/>
     <Counter/> */}
     {/* <CheckBoxes/> */}
-    <HandleDropdown/>
+    <HandleDropdown/> 
   </StrictMode>,
 )
  
