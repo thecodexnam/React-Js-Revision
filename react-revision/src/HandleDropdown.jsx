@@ -18,7 +18,7 @@ const HandleDropdown = () => {
         <option value="gurugram">Gurgaon</option>
         <option value="delhi">Delhi</option>
       </select>
-      <h2>Select City: {city}</h2>
+      <h2>Select City:{city}</h2>
     </div>
   )
 }
