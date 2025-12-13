@@ -1,14 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import State from './State.jsx'
-import Counter from './Counter.jsx'
-import CheckBoxes from './CheckBoxes.jsx'
-import HandleDropdown from './HandleDropdown.jsx'
-import LoopinJSX from './LoopinJSX.jsx'
-import ClockProps from './ClockProps.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
+import State from "./State.jsx";
+import Counter from "./Counter.jsx";
+import CheckBoxes from "./CheckBoxes.jsx";
+import HandleDropdown from "./HandleDropdown.jsx";
+import LoopinJSX from "./LoopinJSX.jsx";
+import ClockProps from "./ClockProps.jsx";
+import NestedLoop from "./NestedLoop.jsx";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <App/> */}
     {/* <State/>
@@ -16,7 +17,7 @@ createRoot(document.getElementById('root')).render(
     {/* <CheckBoxes/> */}
     {/* <HandleDropdown/>  */}
     {/* <LoopinJSX/> */}
-    <ClockProps/>
-  </StrictMode>,
-)
- 
+    {/* <ClockProps/> */}
+    <NestedLoop />
+  </StrictMode>
+);
