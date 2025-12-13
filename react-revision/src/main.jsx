@@ -6,15 +6,17 @@ import Counter from './Counter.jsx'
 import CheckBoxes from './CheckBoxes.jsx'
 import HandleDropdown from './HandleDropdown.jsx'
 import LoopinJSX from './LoopinJSX.jsx'
+import ClockProps from './ClockProps.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App/>
+    {/* <App/> */}
     {/* <State/>
     <Counter/> */}
     {/* <CheckBoxes/> */}
     {/* <HandleDropdown/>  */}
     {/* <LoopinJSX/> */}
+    <ClockProps/>
   </StrictMode>,
 )
  
