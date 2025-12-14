@@ -8,6 +8,7 @@ import HandleDropdown from "./HandleDropdown.jsx";
 import LoopinJSX from "./LoopinJSX.jsx";
 import ClockProps from "./ClockProps.jsx";
 import NestedLoop from "./NestedLoop.jsx";
+import UseEffect from "./UseEffect.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -18,6 +19,7 @@ createRoot(document.getElementById("root")).render(
     {/* <HandleDropdown/>  */}
     {/* <LoopinJSX/> */}
     {/* <ClockProps/> */}
-    <NestedLoop />
+    {/* <NestedLoop /> */}
+    <UseEffect />
   </StrictMode>
 );
