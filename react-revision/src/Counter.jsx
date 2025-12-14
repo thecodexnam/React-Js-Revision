@@ -1,16 +1,38 @@
-import { useState } from "react"
+import React, { useState } from "react";
+import UseEffect from "./UseEffect";
+import { useEffect } from "react";
 
-const Counter = () =>{
-    const[count,setCount]=useState(0)
+const Counter = ({ count, data }) => {
+  // function handleCounter(){
+  //     console.log("Handle Counter callled");
+  // }
 
-    return(
-        <div>
-            <h1>Counter</h1>
-            <h2>{`Value: ${count}`}</h2>
-            <button onClick={()=>setCount(count+1)}>Increment</button>
-            <button onClick={()=>setCount(count-1)}>Decrement</button>
-        </div>
-    )
-}
+  // const handleData= (()=>{
+  //     console.log("Handle Data Called");
+  // })
+
+  // useEffect(()=>{
+  //     handleCounter();
+  // },[])
+
+  // useEffect(()=>{
+  //     handleData()
+  // },[data])
+
+  useEffect(() => {
+    console.log("Mounting Phase Only");
+  }, []);
+
+  useEffect(() => {
+    console.log("Update Phase Only");
+  }, [count]);
+
+  return (
+    <div>
+      <h1>Counter Value: {count}</h1>
+      <h1>Data Value: {data}</h1>
+    </div>
+  );
+};
 
 export default Counter;
