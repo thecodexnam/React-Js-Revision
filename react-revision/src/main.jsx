@@ -22,6 +22,6 @@ createRoot(document.getElementById("root")).render(
     {/* <ClockProps/> */}
     {/* <NestedLoop /> */}
     {/* <UseEffect /> */}
-    <Inline />
+    {/* <Inline /> */}
   </StrictMode>
 );
