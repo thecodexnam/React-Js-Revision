@@ -9,6 +9,7 @@ import LoopinJSX from "./LoopinJSX.jsx";
 import ClockProps from "./ClockProps.jsx";
 import NestedLoop from "./NestedLoop.jsx";
 import UseEffect from "./UseEffect.jsx";
+import Inline from "./Inline.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -20,6 +21,7 @@ createRoot(document.getElementById("root")).render(
     {/* <LoopinJSX/> */}
     {/* <ClockProps/> */}
     {/* <NestedLoop /> */}
-    <UseEffect />
+    {/* <UseEffect /> */}
+    <Inline />
   </StrictMode>
 );
