@@ -27,6 +27,12 @@ const Counter = ({ count, data }) => {
     console.log("Update Phase Only");
   }, [count]);
 
+  useEffect(()=>{
+    return()=>(
+        console.log("Unmount Phase only")        
+    )
+  },[])
+
   return (
     <div>
       <h1>Counter Value: {count}</h1>
