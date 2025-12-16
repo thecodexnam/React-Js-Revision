@@ -10,6 +10,8 @@ import ClockProps from "./ClockProps.jsx";
 import NestedLoop from "./NestedLoop.jsx";
 import UseEffect from "./UseEffect.jsx";
 import Inline from "./Inline.jsx";
+import ExternalCss from "./ExternalCss.jsx";
+import RGBColorMixer from "./RGBColorMixer.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -23,5 +25,7 @@ createRoot(document.getElementById("root")).render(
     {/* <NestedLoop /> */}
     {/* <UseEffect /> */}
     {/* <Inline /> */}
+    {/* <ExternalCss /> */}
+    <RGBColorMixer/>
   </StrictMode>
 );
