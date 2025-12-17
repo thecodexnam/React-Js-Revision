@@ -5,17 +5,23 @@ const InterviewPrep = () => {
     const[count,setCount] = useState(0)
     const[data,setData] = useState(0)
 
+    const[counter,setcounter] = useState(0)
+
+    useEffect(()=>{
+        setcounter(counter+1)
+    },[])
+
     // useEffect(()=>{
     //     console.log("Block: 1")
     // },[])
 
-    useEffect(()=>{
-        console.log("Block: 2")
-    },[count])
+    // useEffect(()=>{
+    //     console.log("Block: 2")
+    // },[count])
 
-    useEffect(()=>{
-        console.log("Block: 3")
-    },[data])
+    // useEffect(()=>{
+    //     console.log("Block: 3")
+    // },[data])
 
   return (
     <div>
@@ -28,8 +34,10 @@ const InterviewPrep = () => {
         <button onClick={()=>setName('')}>Clear</button>
         <h1>Your Write :{name}</h1> */}
         <h1>Hooks interview Question in React JS</h1>
-        <button onClick={()=>setCount(count+1)}>Count: {count}</button>
-        <button onClick={()=>setData(data+1)}>Data: {data}</button>
+        {/* <button onClick={()=>setCount(count+1)}>Count: {count}</button>
+        <button onClick={()=>setData(data+1)}>Data: {data}</button> */}
+
+
     </div>
   )
 }
