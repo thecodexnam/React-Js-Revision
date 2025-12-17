@@ -12,6 +12,7 @@ import UseEffect from "./UseEffect.jsx";
 import Inline from "./Inline.jsx";
 import ExternalCss from "./ExternalCss.jsx";
 import RGBColorMixer from "./RGBColorMixer.jsx";
+import InterviewPrep from "./InterviewPrep.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -26,6 +27,7 @@ createRoot(document.getElementById("root")).render(
     {/* <UseEffect /> */}
     {/* <Inline /> */}
     {/* <ExternalCss /> */}
-    <RGBColorMixer/>
+    {/* <RGBColorMixer/> */}
+    <InterviewPrep/>
   </StrictMode>
 );

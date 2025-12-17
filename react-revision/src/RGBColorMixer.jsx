@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 
 const RGBColorMixer = () => {
-  const [red, setRed] = useState(0);
-  const [green, setGreen] = useState(0);
-  const [blue, setBlue] = useState(0);
 
-  //rgb('+red+','+green+','+blue+')
+  const colors = JSON.parse(localStorage.getItem('color'))
+  const [red, setRed] = useState(colors && colors.red?colors.red:0);
+  const [green, setGreen] = useState(colors && colors.green?colors.green:0);
+  const [blue, setBlue] = useState(colors && colors.blue?colors.blue:0);
+
+
+const Save = () =>{
+    console.log("Saved")
+    localStorage.setItem("color",JSON.stringify({red,green,blue}))
+}
+
+
 
   return (
     <div>
@@ -47,6 +55,7 @@ const RGBColorMixer = () => {
         value={blue}
       />
       <br />
+      <button onClick={Save}>Save Color Combinantion</button>
     </div>
   );
 };
