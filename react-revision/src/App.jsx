@@ -1,44 +1,64 @@
 import React from 'react'
-import User from './User';
+import ModuleCss from './ModuleCss'
 
 const App = () => {
-
-      const UserData = [
-       { Name:"Naman",
-        age:20,
-        Address:"31B/1 Najafgarh, New Delhi - 110043",
-        email:"namantest@gmail.com",
-        id:1
-       },
-       { Name:"Daman",
-        age:29,
-        Address:"House-21 Mistic Fall, England - 5452",
-        email:"damontest@gmail.com",
-        id:2
-       },
-       { Name:"Stefen",
-        age:23,
-        Address:"House-210 Mistic Fall, England - 5452",
-        email:"stefentest@gmail.com",
-        id:3
-       }    
-    ]
-
   return (
     <div>
-      <h1>ReUse Component in Loop</h1>
-      {
-        UserData.map((user)=>(
-          <div key={user.id}>
-            <User user={user}/>
-          </div>
-        ))
-      }
+      <h1>Style with CSS Module in React JS</h1>
+      <ModuleCss/>
     </div>
   )
 }
 
 export default App
+
+
+
+
+
+
+
+// import React from 'react'
+// import User from './User';
+
+// const App = () => {
+
+//       const UserData = [
+//        { Name:"Naman",
+//         age:20,
+//         Address:"31B/1 Najafgarh, New Delhi - 110043",
+//         email:"namantest@gmail.com",
+//         id:1
+//        },
+//        { Name:"Daman",
+//         age:29,
+//         Address:"House-21 Mistic Fall, England - 5452",
+//         email:"damontest@gmail.com",
+//         id:2
+//        },
+//        { Name:"Stefen",
+//         age:23,
+//         Address:"House-210 Mistic Fall, England - 5452",
+//         email:"stefentest@gmail.com",
+//         id:3
+//        }    
+//     ]
+
+//   return (
+//     <div>
+//       <h1>ReUse Component in Loop</h1>
+//       {
+//         UserData.map((user)=>(
+//           <div key={user.id}>
+//             <User user={user}/>
+//           </div>
+//         ))
+//       }
+//     </div>
+//   )
+// }
+
+// export default App
 
 
 
