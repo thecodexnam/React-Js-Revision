@@ -13,12 +13,13 @@ import Inline from "./Inline.jsx";
 import ExternalCss from "./ExternalCss.jsx";
 import RGBColorMixer from "./RGBColorMixer.jsx";
 import InterviewPrep from "./InterviewPrep.jsx";
+import ModuleCss from "./ModuleCss.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    {/* <App/> */}
+    <App/>
     {/* <State/>
-    <Counter/> */}
+    {<Counter/> */}
     {/* <CheckBoxes/> */}
     {/* <HandleDropdown/>  */}
     {/* <LoopinJSX/> */}
@@ -28,6 +29,7 @@ createRoot(document.getElementById("root")).render(
     {/* <Inline /> */}
     {/* <ExternalCss /> */}
     {/* <RGBColorMixer/> */}
-    <InterviewPrep/>
+    {/* <InterviewPrep/> */}
+    {/* <ModuleCss/> */}
   </StrictMode>
 );
