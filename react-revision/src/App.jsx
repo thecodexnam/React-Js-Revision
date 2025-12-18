@@ -1,12 +1,51 @@
 import React from 'react'
-import ModuleCss from './ModuleCss';
-import style from "../src/Css/UserProfile.module.css";
+import styled from 'styled-components'
 
 const App = () => {
+
+  const Heading = styled.h2`
+  color:red;
+  background-color: black;
+  padding:10px;
+  padding-left:20px;
+  border-radius:10px;
+  `
+
+  // const Button = styled.button`
+  //   padding:10px 20px;
+  //   font-size:16px;
+  //   border-radius:5px;
+  //   background-color: green;
+  //   color:white;
+  //   border:none;
+  //   cursor:pointer;
+
+  //   &:hover{
+  //     background-color: darkgreen;
+  //   }
+  // `
+
+  const Button = styled.button({
+    fontSize:'16px',
+    borderRadius:'5px',
+    backgroundColor: 'green',
+    padding:'10px 20px',
+    color:'white', 
+    border:'none',
+    cursor:'pointer',
+
+    '&:hover':{
+      backgroundColor: 'darkgreen',
+    }
+  })
+ 
+  
+
   return (
     <div>
-      <h1  className={style.heading}>Style with CSS Module in React JS</h1>
-      <ModuleCss/>
+      <h1>Styled Component with React JS</h1>
+      <Heading>Hello, Brother</Heading>
+      <Button onClick={()=>console.log("Clicked")}>Click Me</Button>
     </div>
   )
 }
