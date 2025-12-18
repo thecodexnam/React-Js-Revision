@@ -1,10 +1,11 @@
 import React from 'react'
-import ModuleCss from './ModuleCss'
+import ModuleCss from './ModuleCss';
+import style from "../src/Css/UserProfile.module.css";
 
 const App = () => {
   return (
     <div>
-      <h1>Style with CSS Module in React JS</h1>
+      <h1  className={style.heading}>Style with CSS Module in React JS</h1>
       <ModuleCss/>
     </div>
   )
