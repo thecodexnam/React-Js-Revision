@@ -1,52 +1,70 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
-import { Alert } from 'react-bootstrap'
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { UseRef } from './UseRef'
 
 const App = () => {
-
-  const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
   return (
     <div>
-
-            <Nav variant="pills" activeKey="1" onSelect={handleSelect}>
-      <Nav.Item>
-        <Nav.Link eventKey="1" href="#/home">
-          NavLink 1 content
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="2" title="Item">
-          NavLink 2 content
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="3" disabled>
-          NavLink 3 content
-        </Nav.Link>
-      </Nav.Item>
-      <NavDropdown title="Dropdown" id="nav-dropdown">
-        <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
-        <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
-
-      <h1>Bootstrap in React JS</h1>
-      <Button>Bootstrap Button</Button>
-      <Alert variant='success'>Hello BT</Alert>
-      <Button onClick={()=>alert("You clicked danger Button")} variant='danger'>Danger</Button>
-      <Button variant='warning'>Warning</Button>
-      <Button variant='info'>Info</Button>
-      <button onClick={()=>alert("You click on simple button")}>Simple Button</button>
+      <UseRef/>
     </div>
   )
 }
 
 export default App;
+
+
+
+
+
+
+// import React from 'react'
+// import { Button } from 'react-bootstrap'
+// import { Alert } from 'react-bootstrap'
+// import Nav from 'react-bootstrap/Nav';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
+
+// const App = () => {
+
+//   const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
+//   return (
+//     <div>
+
+//             <Nav variant="pills" activeKey="1" onSelect={handleSelect}>
+//       <Nav.Item>
+//         <Nav.Link eventKey="1" href="#/home">
+//           NavLink 1 content
+//         </Nav.Link>
+//       </Nav.Item>
+//       <Nav.Item>
+//         <Nav.Link eventKey="2" title="Item">
+//           NavLink 2 content
+//         </Nav.Link>
+//       </Nav.Item>
+//       <Nav.Item>
+//         <Nav.Link eventKey="3" disabled>
+//           NavLink 3 content
+//         </Nav.Link>
+//       </Nav.Item>
+//       <NavDropdown title="Dropdown" id="nav-dropdown">
+//         <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
+//         <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
+//         <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
+//         <NavDropdown.Divider />
+//         <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+//       </NavDropdown>
+//     </Nav>
+
+//       <h1>Bootstrap in React JS</h1>
+//       <Button>Bootstrap Button</Button>
+//       <Alert variant='success'>Hello BT</Alert>
+//       <Button onClick={()=>alert("You clicked danger Button")} variant='danger'>Danger</Button>
+//       <Button variant='warning'>Warning</Button>
+//       <Button variant='info'>Info</Button>
+//       <button onClick={()=>alert("You click on simple button")}>Simple Button</button>
+//     </div>
+//   )
+// }
+
+// export default App;
 
 
 
