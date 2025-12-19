@@ -14,6 +14,7 @@ import ExternalCss from "./ExternalCss.jsx";
 import RGBColorMixer from "./RGBColorMixer.jsx";
 import InterviewPrep from "./InterviewPrep.jsx";
 import ModuleCss from "./ModuleCss.jsx";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
