@@ -1,10 +1,11 @@
 import React from 'react'
 import { UseRef } from './UseRef'
+import { UncontrolledComponent } from './UncontrolledComponent';
 
 const App = () => {
   return (
     <div>
-      <UseRef/>
+      <UncontrolledComponent/>
     </div>
   )
 }
