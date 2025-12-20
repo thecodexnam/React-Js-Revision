@@ -1,28 +1,66 @@
 import React from 'react'
-import { use,useRef } from 'react'
-import FormwardRef from './FormwardRef'
+import {useFormStatus} from 'react-dom'
 
 const App = () => {
-  const inputRef = useRef(null);
 
-  const updateInput= ()=>{
-    inputRef.current.value=1000;
-    inputRef.current.focus();
-    inputRef.current.style.color='red';
+  const handleSubmit =async()=>{
+    await new Promise(res=>setTimeout(res,3000));
+    console.log("Submit");
   }
 
+  function CustomerForm(){
 
+    const {pending} = useFormStatus()
+    console.log(pending)
+
+    return(
+      <div>
+      <input type="text" placeholder='Enter Your name' /><br/>
+      <input type="password" placeholder='Enter Password' /><br/>
+      <button disabled={pending}>{pending?'Submitting...':'Submit'}</button>
+      </div>
+    )
+  }
 
   return (
     <div>
-      <h1>Forward Ref</h1>
-      <FormwardRef ref={inputRef}/>
-      <button onClick={updateInput}>Update Input Field</button>
+      <h1>UseForm Hook in React JS</h1>
+      <form action={handleSubmit}>
+        <CustomerForm/>
+      </form>
     </div>
   )
 }
 
-export default App
+export default App; 
+
+
+
+// import React from 'react'
+// import { use,useRef } from 'react'
+// import FormwardRef from './FormwardRef'
+
+// const App = () => {
+//   const inputRef = useRef(null);
+
+//   const updateInput= ()=>{
+//     inputRef.current.value=1000;
+//     inputRef.current.focus();
+//     inputRef.current.style.color='red';
+//   }
+
+
+
+//   return (
+//     <div>
+//       <h1>Forward Ref</h1>
+//       <FormwardRef ref={inputRef}/>
+//       <button onClick={updateInput}>Update Input Field</button>
+//     </div>
+//   )
+// }
+
+// export default App
 
 
 
