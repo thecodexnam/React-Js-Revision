@@ -1,38 +1,66 @@
-import React from 'react'
-import {useFormStatus} from 'react-dom'
+import { useFormStatus } from "react-dom";
 
-const App = () => {
+function SubmitButton() {
+  const { pending } = useFormStatus();
 
-  const handleSubmit =async()=>{
-    await new Promise(res=>setTimeout(res,3000));
+  return (
+    <>
+      {pending && <img src="https://i.gifer.com/ZZ5H.gif" alt="Loading..." width="50"/>}
+      <button type="submit" disabled={pending}>
+        {pending ? "Submitting..." : "Submit"}
+      </button>
+    </>
+  );
+}
+
+export default function App() {
+
+  async function handleSubmit() {
+    await new Promise(res => setTimeout(res, 3000));
     console.log("Submit");
   }
 
-  function CustomerForm(){
-
-    const {pending} = useFormStatus()
-    console.log(pending)
-
-    return(
-      <div>
-      <input type="text" placeholder='Enter Your name' /><br/>
-      <input type="password" placeholder='Enter Password' /><br/>
-      <button disabled={pending}>{pending?'Submitting...':'Submit'}</button>
-      </div>
-    )
-  }
-
   return (
-    <div>
-      <h1>UseForm Hook in React JS</h1>
-      <form action={handleSubmit}>
-        <CustomerForm/>
-      </form>
-    </div>
-  )
+    <form action={handleSubmit}>
+      <input type="text" placeholder="Enter your name" /><br />
+      <input type="password" placeholder="Enter password" /><br />
+      <SubmitButton />
+    </form>
+  );
 }
 
-export default App; 
+
+
+
+
+// import React, { useState } from 'react'
+// import { UseTransition } from './UseTransition';
+
+// const App = () => {
+//   return (
+//     <div>
+//         <h1>React Revision</h1>
+//         <hr/>
+//         {/* <UncontrolledComponent/> */}
+//         {/* <UseTransition/> */}
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+//   return (
+//     <div>
+//       <h1>UseForm Hook in React JS</h1>
+//       <form action={handleSubmit}>
+//         <CustomerForm/>
+//       </form>
+//     </div>
+//   )
+// }
+
+// export default App; 
 
 
 
