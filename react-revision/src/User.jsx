@@ -1,27 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
-const User = ({color}) => {
-  const[time,setTime] = useState(0);
-
-  useEffect(()=>{
-    setInterval(()=>{
-      setTime(new Date().toLocaleTimeString());
-    },1000)
-  },[]);
-
+const User = ({DisplayName,name}) => {
   return (
     <div >
-      <h1 style={{
-        backgroundColor:color,
-        color:"white",
-        height:"50px",
-        textAlign:"center",
-        width:"190px",
-        padding:"25px",
-        borderRadius:"50px"
-      }}
-        >
-          {time}</h1>
+     <button onClick={()=>DisplayName(name)}>Display Name</button>
     </div>
   )
 }
