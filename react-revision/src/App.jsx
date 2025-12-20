@@ -1,26 +1,57 @@
 import React from 'react'
-import { UseRef } from './UseRef'
-import { UncontrolledComponent } from './UncontrolledComponent';
-import User from './User';
+import { use,useRef } from 'react'
+import FormwardRef from './FormwardRef'
 
 const App = () => {
+  const inputRef = useRef(null);
 
-  const DisplayName = (name) =>{
-    alert('User name is '+ name);
+  const updateInput= ()=>{
+    inputRef.current.value=1000;
+    inputRef.current.focus();
+    inputRef.current.style.color='red';
   }
+
+
 
   return (
     <div>
-      <h1>Call Parent Function from Child Component</h1>
-      <User DisplayName={DisplayName} name="Naman Yadav"/>
-      <User DisplayName={DisplayName} name="Rahul Sharma"/>
-      <User DisplayName={DisplayName} name="Priya Patel"/>
-      <User DisplayName={DisplayName} name="Amit Kumar"/>
+      <h1>Forward Ref</h1>
+      <FormwardRef ref={inputRef}/>
+      <button onClick={updateInput}>Update Input Field</button>
     </div>
   )
 }
 
-export default App;
+export default App
+
+
+
+
+
+
+// import React from 'react'
+// import { UseRef } from './UseRef'
+// import { UncontrolledComponent } from './UncontrolledComponent';
+// import User from './User';
+
+// const App = () => {
+
+//   const DisplayName = (name) =>{
+//     alert('User name is '+ name);
+//   }
+
+//   return (
+//     <div>
+//       <h1>Call Parent Function from Child Component</h1>
+//       <User DisplayName={DisplayName} name="Naman Yadav"/>
+//       <User DisplayName={DisplayName} name="Rahul Sharma"/>
+//       <User DisplayName={DisplayName} name="Priya Patel"/>
+//       <User DisplayName={DisplayName} name="Amit Kumar"/>
+//     </div>
+//   )
+// }
+
+// export default App;
 
 
 
