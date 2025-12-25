@@ -7,9 +7,10 @@ function App(){
   
   return(
     <div>
-      <NavBar/>
+      
+      {/* <NavBar/>
       <Main/>
-      <Footer/>
+      <Footer/> */}
     </div>
   )
 }
