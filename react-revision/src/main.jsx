@@ -14,6 +14,7 @@ import RGBColorMixer from "./RGBColorMixer.jsx";
 import InterviewPrep from "./InterviewPrep.jsx";
 import ModuleCss from "./ModuleCss.jsx";
 import App from "./App.jsx";
+import './index.css';
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
