@@ -18,7 +18,7 @@ import './index.css';
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App/>
+    <Inline />
     {/* <State/>
     {<Counter/> */}
     {/* <CheckBoxes/> */}
