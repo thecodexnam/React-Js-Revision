@@ -3,13 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { useEffect } from 'react'
+import { useRef } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
+ const inputValue = useRef("")
+ console.log(inputValue)
+
+
 
   return (
     <>
-    <h1>{Count}</h1>  
+    <input type='text' ref={inputValue} placeholder='Enter Your Name'/>
     </>
       
   )
