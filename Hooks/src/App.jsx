@@ -20,7 +20,6 @@ const App = () => {
       <li key={index}>{todo}</li>
       ))}
       </ul>
-
     </div>
   )
 }
