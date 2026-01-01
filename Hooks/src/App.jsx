@@ -1,21 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { useEffect } from 'react'
-import { useRef } from 'react'
+import React, { useState } from 'react'
 
-function App() {
- const inputValue = useRef("")
- console.log(inputValue)
+const App = () => {
+  const[task,setTask] = useState("");
+  const[todos,setTodos] = useState([])
 
-
+  const addTodo = () =>{
+    if (task =="" || task == " ") return;
+    setTodos([...todos,task]);
+    setTask("");
+  };
 
   return (
-    <>
-    <input type='text' ref={inputValue} placeholder='Enter Your Name'/>
-    </>
-      
+    <div>
+      <input value={task} onChange={(e)=>setTask(e.target.value)} type="text" placeholder='Enter Task Name' />
+      <button onClick={addTodo}>Add Task</button>
+
+      <ul>
+      {todos.map((todo, index) => (
+      <li key={index}>{todo}</li>
+      ))}
+      </ul>
+
+    </div>
   )
 }
 

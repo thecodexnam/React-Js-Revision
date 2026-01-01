@@ -1,20 +1,10 @@
-import { useContext, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { data } from './Context/UserContext'
-import Cart from './Context/Cart'
+import React from 'react'
 
-function App() {
-let name = useContext(data)
-console.log(name);
-
-
+const App = () => {
   return (
-    <>
-    <h1>{name}</h1>
-    <Cart/>
-    </>
+    <div style={{backgroundColor:'yellow',}}>
+      <h1>Context API</h1>
+    </div>
   )
 }
 
