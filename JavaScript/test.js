@@ -1,12 +1,3 @@
-let obj={ ayush:95 , Hemant:92 , Dev:33 }
+let a = "were you able to do it"
 
-for (val in obj) 
-{
-    console.log("The Name of Student is ",val ," and Marks is ",obj[val] )
-}
-
-let tableVal = 12;
-
-for(let i =1; i<=10; i++){
-    console.log(tableVal*i);
-}
+console.log(a.replace("able","notAble"))

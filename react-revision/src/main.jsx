@@ -15,10 +15,11 @@ import InterviewPrep from "./InterviewPrep.jsx";
 import ModuleCss from "./ModuleCss.jsx";
 import App from "./App.jsx";
 import './index.css';
+import Test from "./Practice/Test.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Inline />
+    {/* <Inline /> */}
     {/* <State/>
     {<Counter/> */}
     {/* <CheckBoxes/> */}
@@ -32,5 +33,6 @@ createRoot(document.getElementById("root")).render(
     {/* <RGBColorMixer/> */}
     {/* <InterviewPrep/> */}
     {/* <ModuleCss/> */}
+    <Test/>
   </StrictMode>
 );
