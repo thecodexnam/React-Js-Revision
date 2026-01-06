@@ -21,4 +21,5 @@ let x =document.getElementsByTagName('nav');
 x[0].firstElementChild.style.background = "brown"
 
 
+
 // x.fir style.color = "purple"l
