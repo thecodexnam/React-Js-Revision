@@ -1,6 +1,16 @@
-// let box = document.createElement('div')
-// box.className = "naman"
-// box.innerHTML = "<h1>Naman Yadav</h1>"
+let a = document.getElementById("box")
+
+// let mul = (a,b)=>{
+//    console.log(a*b) 
+// }
+
+// setTimeout(mul,2000,7,7)
+
+let alrt = () =>{
+    alert("Function called")
+}
+
+setTimeout(alrt,2000)
 
 
 
