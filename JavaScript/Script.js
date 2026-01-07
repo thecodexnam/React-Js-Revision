@@ -24,16 +24,22 @@ blue.addEventListener('click',fn3)
 yellow.addEventListener('click',fn4)
 
 
+let x = document.getElementById('mode');
 
+let mode = function(){
+    x.classList.toggle("night")
+    if(x.classList.contains("night")==true){
+    document.body.style.backgroundColor="black"
+    document.body.style.color = "white"
+    }
+    else{
+    document.body.style.backgroundColor="white"
+    document.body.style.color = "black"
+    }
 
-// let x = document.getElementById('mode');
+}
 
-// let mode = function(){
-//     document.body.style.backgroundColor="black"
-//     document.body.style.color = "white"
-// }
-
-// x.addEventListener('click',mode)
+x.addEventListener('click',mode)
 
 
 
