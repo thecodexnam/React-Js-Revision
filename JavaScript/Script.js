@@ -1,16 +1,17 @@
 let a = document.getElementById("box")
 
-// let mul = (a,b)=>{
-//    console.log(a*b) 
-// }
 
-// setTimeout(mul,2000,7,7)
 
-let alrt = () =>{
-    alert("Function called")
+
+
+
+
+let mul = ()=>{
+   console.log("SetInterval Function is Called") 
 }
 
-setTimeout(alrt,2000)
+// setInterval(mul,2000)
+
 
 
 
