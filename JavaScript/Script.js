@@ -6,4 +6,4 @@ document.body.append(box)
 let a = document.createElement('h1')
 a.innerHTML = "I'm Heading 1 Tag"
 
-box.append(a)
+box.replaceWith(a)
