@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://imgs.search.brave.com/fPZtoZre7vjcshFc34PZTX2rX219w-Rr02lXwBXHWYg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/ZnJvbnQuZnJlZXBp/ay5jb20vaW1hZ2Vz/L2hvbWUvdG9vbHMv/Z2VuZXJhdGUtYW4t/aW1hZ2Uud2VicA');
+    background-size: 100vh 100vw;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.209);
+    width: 40vw;
+    height: 70vh;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.437);
+}
+
+.clock{
+    height: 100%;
+}
+
+.clock1{
+    width: 55%;
+}
+
+.clock2{
+    width: 45%;
+    padding-top: 20px;
+
+}
+
+#hrs{
+    height: 40%;
+
+    text-align: center;
+    font-size: 150px;
+}
+
+#colon{
+    height: 20%;
+    text-align: center;
+    font-size: 90px;
+    transform: translate(-25px);
+}
+
+#mon{
+    margin-left:5px ;
+}
+
+#mins{
+    height: 40%;
+    text-align: center;
+    font-size: 150px;
+}
+
+.date{
+    height: 10%;
+    font-size: 40px;
+}
+
+#year{
+    height: 20%;
+    font-size: 60px;
+}
+
+#day{
+    height: 20%;
+    font-size: 50px;
+    margin-top: -20px;
+}
+
+#AM-PM{
+    height: 20%;
+    font-size: 80px;
+    padding-top:40px ;
+}
+
+#sec{
+    height: 30%;
+    font-size: 80px;
+    margin-top: 20px;
+
+}
+
