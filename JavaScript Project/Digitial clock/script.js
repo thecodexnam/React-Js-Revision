@@ -1,25 +1,54 @@
-let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const hrs = document.getElementById("hrs");
+const mins = document.getElementById("mins");
+const sec = document.getElementById("sec");
+const ampm = document.getElementById("AM-PM");
+const dayEl = document.getElementById("day");
+const monEl = document.getElementById("mon");
+const yearEl = document.getElementById("year");
+const toggleBtn = document.getElementById("themeToggle");
 
+const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
-let hours = document.getElementById('hrs')
-let minutes = document.getElementById('mins')
-let seconds = document.getElementById('sec')
-let date = document.getElementById('dat')
-let month = document.getElementById('mon')
-let day = document.getElementById('day')
-let year = document.getElementById('year')
-let ampm = document.getElementById('AM-PM')
+/* ================= CLOCK ================= */
 
+function updateClock() {
+    const now = new Date();
 
-setInterval(()=>{  
-let time = new Date;
-hours.innerHTML=time.getHours()
-minutes.innerHTML=time.getMinutes()
-seconds.innerHTML = time.getSeconds()
-date.innerHTML=time.getDate()
-month.innerHTML = months[time.getMonth()]
-day.innerHTML= days[time.getDay()]
-year.innerHTML=time.getFullYear()
-ampm.innerHTML=time.getHours()>=12?'PM':'AM'
-},1000)
+    let h = now.getHours();
+    let m = now.getMinutes();
+    let s = now.getSeconds();
+
+    const amPm = h >= 12 ? "PM" : "AM";
+    h = h % 12 || 12;
+
+    hrs.textContent = String(h).padStart(2, "0");
+    mins.textContent = String(m).padStart(2, "0");
+    sec.textContent = String(s).padStart(2, "0");
+    ampm.textContent = amPm;
+
+    dayEl.textContent = days[now.getDay()];
+    monEl.textContent = months[now.getMonth()];
+    yearEl.textContent = now.getFullYear();
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+
+/* ================= THEME ================= */
+
+// Load saved theme
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    toggleBtn.textContent = "☀️";
+}
+
+// Toggle theme
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    const theme = document.body.classList.contains("dark") ? "dark" : "light";
+    localStorage.setItem("theme", theme);
+
+    toggleBtn.textContent = theme === "dark" ? "☀️" : "🌙";
+});
