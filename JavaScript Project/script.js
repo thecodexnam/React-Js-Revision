@@ -1,3 +1,23 @@
+function database(id){
+    return new Promise((resolve,reject) =>{
+        setTimeout(()=>{
+            console.log("data",id)
+            resolve("Success")
+        },5000)
+    })
+}
+
+database(1).then(()=>{
+    database(2).then(()=>{
+        database(3).then(()=>{
+            database(4).then(()=>{               
+            })
+        })
+    })
+})
+
+
+
 // const sum = (a,b)=>{
 //     console.log(a+b)
 // }
@@ -27,13 +47,13 @@
 //     console.log(result);
 // })
 
-function nam(){
-    console.log("i run after 5 sec")
-}
+// function nam(){
+//     console.log("i run after 5 sec")
+// }
 
-setTimeout(()=>{
-    nam()
-},5000)
+// setTimeout(()=>{
+//     nam()
+// },5000)
 
 // function database(id,nextdata){
 //     setTimeout(()=>{
@@ -50,3 +70,9 @@ setTimeout(()=>{
 //         database(3)
 //     })
 // })
+
+
+// let promise = new Promise((resolve,reject)=>{
+//     console.log("data");
+//     reject("error")
+// }) 
