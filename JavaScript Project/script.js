@@ -1,22 +1,41 @@
-// FEtch API
-
-let URL = "https://official-joke-api.appspot.com/random_joke"
-let jok = document.getElementById('joke')
-let btn = document.getElementById('btn')
-
-async function getjokes(){
-    let joke = await fetch(URL)
-    let result = await joke.json();
-    jok.innerHTML = `${result.setup} <br> ${result.punchline}`
+function callgym(value,callback,callback1){
+    console.log("you are in gym ", value)
+    callback()
+    callback1("Naman")
 }
 
-btn.addEventListener("click",()=>{
-    getjokes();
-})
+function goh(){
+    console.log("now, Its time to go home")
+}
 
-let a = fetch(URL)
-  .then(response => response.json())
-  .then(data => console.log(data));
+function web(nam){
+    console.log("now you need to study web dev",nam)
+}
+
+callgym("Naman",goh,web);
+
+
+
+
+// FEtch API
+
+// let URL = "https://official-joke-api.appspot.com/random_joke"
+// let jok = document.getElementById('joke')
+// let btn = document.getElementById('btn')
+
+// async function getjokes(){
+//     let joke = await fetch(URL)
+//     let result = await joke.json();
+//     jok.innerHTML = `${result.setup} <br> ${result.punchline}`
+// }
+
+// btn.addEventListener("click",()=>{
+//     getjokes();
+// })
+
+// let a = fetch(URL)
+//   .then(response => response.json())
+//   .then(data => console.log(data));
 
 
 
