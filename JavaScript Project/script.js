@@ -1,42 +1,86 @@
-function server (id){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            console.log('data',id)
-            resolve('success');
-        },5000)
-    })
+// FEtch API
+
+let URL = "https://official-joke-api.appspot.com/random_joke"
+let jok = document.getElementById('joke')
+let btn = document.getElementById('btn')
+
+async function getjokes(){
+    let joke = await fetch(URL)
+    let result = await joke.json();
+    jok.innerHTML = `${result.setup} <br> ${result.punchline}`
 }
 
-const result =async () =>{
-   await server(1)
-   await server(2)
-   await server(3)
-   await server(4)
-   await server(5)
-   await server(6)
-}
-
-result();
-
-function database(id){
-    return new Promise((resolve,reject) =>{
-        setTimeout(()=>{
-            console.log("data",id)
-            resolve("Success")
-        },5000)
-    })
-}
-
-database(1).then(()=>{
-    database(2).then(()=>{
-        database(3).then(()=>{
-            database(4).then(()=>{               
-            })
-        })
-    })
+btn.addEventListener("click",()=>{
+    getjokes();
 })
 
+let a = fetch(URL)
+  .then(response => response.json())
+  .then(data => console.log(data));
 
+
+
+ 
+
+// function server (id){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log('data',id)
+//             resolve('success');
+//         },5000)
+//     })
+// }
+
+// const result =async () =>{
+//    await server(1)
+//    await server(2)
+//    await server(3)
+//    await server(4)
+//    await server(5)
+//    await server(6)
+// }
+
+// result();
+
+// function database(id){
+//     return new Promise((resolve,reject) =>{
+//         setTimeout(()=>{
+//             console.log("data",id)
+//             resolve("Success")
+//         },5000)
+//     })
+// }
+
+// database(1).then(()=>{
+//     database(2).then(()=>{
+//         database(3).then(()=>{
+//             database(4).then(()=>{               
+//             })
+//         })
+//     })
+// })
+
+
+
+// function fact(id){
+//     let result = 1;
+//     for(let i =1; i<=id; i++){
+//         result *= i;
+//     }
+//     console.log(result)
+// }
+
+// function calculate(id,callback){
+//     callback(id)
+// }
+
+//  setTimeout(()=>{
+//         calculate(5,fact)
+//     },2000)
+
+// setTimeout(()=>{
+//     calculate(6,fact)
+// },3000)
 
 // const sum = (a,b)=>{
 //     console.log(a+b)
