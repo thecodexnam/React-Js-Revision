@@ -1,3 +1,23 @@
+function server (id){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log('data',id)
+            resolve('success');
+        },5000)
+    })
+}
+
+const result =async () =>{
+   await server(1)
+   await server(2)
+   await server(3)
+   await server(4)
+   await server(5)
+   await server(6)
+}
+
+result();
+
 function database(id){
     return new Promise((resolve,reject) =>{
         setTimeout(()=>{
