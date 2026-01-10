@@ -2,5 +2,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    background-color: aquamarine;
+    margin-top: 30px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.search input{
+    padding: 5px 10px; 
+    border-radius: 20px;
+    border: none;
+    margin-right: 20px;
+}
+
+#btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+}
+
+.weather-status{
+
+}
+
+.w1 , .w2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.w1 img{
+    width: 200px;
+    margin-top: -20px;
+}
+
+#temp{
+    font-size: 70px;
+    margin-top: -40px;
+}
+
+#city{
+    font-size: 30px;
+    margin-top: -10px;
 }
 
