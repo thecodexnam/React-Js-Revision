@@ -1,8 +1,36 @@
 # Quick Start: Deploy to Vercel
 
+## ⚠️ IMPORTANT: Root Directory Setting
+
+**If you get this error:**
+```
+The specified Root Directory "JavaScript%20Project/Weather%20App" does not exist.
+```
+
+**Fix it:**
+1. Go to Vercel Dashboard → Your Project → Settings
+2. Find "Root Directory" in General settings
+3. **Clear/Remove the root directory field** (leave it empty)
+4. Save and Redeploy
+
+---
+
 ## 🚀 Fastest Way (5 minutes)
 
 ### 1. Push to GitHub
+
+**Option A: Create Separate Repo (Recommended)**
+```bash
+# Create new repo on GitHub, then:
+cd "JavaScript Project/Weather App"
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin YOUR_NEW_REPO_URL
+git push -u origin main
+```
+
+**Option B: Use Existing Repo (Fix Root Directory)**
 ```bash
 git init
 git add .

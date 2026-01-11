@@ -1,5 +1,24 @@
 # Deploying Weather App to Vercel
 
+## ⚠️ IMPORTANT: Fix Root Directory Error First
+
+**If you see this error:**
+```
+The specified Root Directory "JavaScript%20Project/Weather%20App" does not exist.
+```
+
+**Quick Fix:**
+1. Vercel Dashboard → Your Project → **Settings** tab
+2. Scroll to **"General"** section
+3. Find **"Root Directory"** field
+4. **Clear it** (leave empty) or remove it
+5. Click **Save**
+6. **Redeploy** your project
+
+**Why?** Vercel is trying to find your project in a subdirectory, but it should deploy from the root of your repository (or from the Weather App folder if you create a separate repo).
+
+---
+
 ## 🚀 Step-by-Step Deployment Guide
 
 ### Prerequisites
