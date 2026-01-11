@@ -1,7 +1,5 @@
-// API endpoint - using Vercel serverless function
-// Works in both development (localhost) and production (Vercel)
-const API_BASE_URL = window.location.origin;
-const apiURL = `${API_BASE_URL}/api/weather?city=`;
+const apiKey = "3854f2b98e3975afdfacfaab34f63db3";
+const apiURL = `https://api.openweathermap.org/data/2.5/weather?units=metric&appid=${apiKey}&q=`;
 
 let temp = document.getElementById("temp");
 let cityElement = document.getElementById("city");
