@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 150px;
-    animation: round 0.1s infinite;
+    animation: round 1s infinite;
 }
 
 @keyframes round{
