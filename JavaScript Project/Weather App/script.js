@@ -1,5 +1,6 @@
-// API endpoint - now using backend proxy for security
-const API_BASE_URL = window.location.origin; // Use same origin in production
+// API endpoint - using Vercel serverless function
+// Works in both development (localhost) and production (Vercel)
+const API_BASE_URL = window.location.origin;
 const apiURL = `${API_BASE_URL}/api/weather?city=`;
 
 let temp = document.getElementById("temp");
