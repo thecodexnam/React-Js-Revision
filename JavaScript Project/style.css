@@ -4,63 +4,22 @@
     box-sizing: border-box;
 }
 
-/* .nav{
-    background-color: black;
-    height: 10vh;
-    color: white;
-}
-
-ul{
-    list-style: none;
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    padding: 30px 70px;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-@media screen and (max-width:300) {
-    body{
-        background-color: aqua;
-    }
-} */
-
-
-body{
-    background-color: aquamarine;
-}
-@media only screen and (max-width:1200px){
-    body{
-        background-color: brown;
-    }
-}
-
-@media only screen and (max-width:400px){
-    body{
-        background-color: rgb(170, 236, 39);
-    }
-}
-
-
-
-/* .container{
-    height: 50vh;
-    background-color: blue;
-    display: grid;
-    grid-row-gap:20px ;
-    grid-gap: 20px 40px;
-    grid-column-gap:20px ;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto 100px;
-}
-
-.Box1{
-    grid-column: 1/3;
-    grid-row: 1/3;
-}
-
 .box{
-    background-color:aqua;
-    border: 2px solid black;
-} */
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    animation: increwidth 2s linear infinite;
+}
+
+@keyframes increwidth {
+    0% {
+        width: 200px;
+    }
+    50% {
+        width: 200px;
+    }
+    100%{
+        width: 800px;
+    }
+}
 
