@@ -12,7 +12,7 @@
     grid-gap: 20px 40px;
     grid-column-gap:20px ;
     grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto 100px;
 }
 
 .Box1{
