@@ -13,6 +13,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    background-image: url('https://imgs.search.brave.com/h_LgG9E14kkNkyAZ-Y128Roa8zN6ZDUjsq1PlJ88pQc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzkv/MjEzLzkzNi9zbWFs/bC9haS1nZW5lcmF0/ZWQtYWJzdHJhY3Qt/d2F0ZXItYnViYmxl/cy1jb2xvcmZ1bC1i/YWNrZ3JvdW5kLWRl/c2lnbi1pbWFnZXMt/cGhvdG8uanBn');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .card{
@@ -20,6 +31,25 @@ body{
     height: 500px;
     background-color: aquamarine;
     margin-top: 30px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .search{
@@ -40,32 +70,80 @@ body{
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    padding: 5px 10px;
     border: none;
 }
 
-.weather-status{
-
-}
-
-.w1 , .w2{
+.w1{
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .w1 img{
     width: 200px;
-    margin-top: -20px;
+    margin-top: -50px;
 }
 
 #temp{
     font-size: 70px;
-    margin-top: -40px;
+    margin-top: -50px;
 }
 
 #city{
     font-size: 30px;
     margin-top: -10px;
+    font-weight: bold;
+}
+
+.w2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.humidity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -30px;
+}
+
+.wind{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#dh{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#th{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .card{
+        width: 100%;
+    }
+    .search{
+        flex-direction: column;
+    }
+    .search input{
+        width: 100%;
+    }
+    .search button{
+        width: 100%;
+    }
 }
 
