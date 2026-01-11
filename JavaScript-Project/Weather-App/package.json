@@ -2,6 +2,7 @@
   "name": "weather-app",
   "version": "1.0.0",
   "description": "Weather App with secure API key handling",
+  "type": "module",
   "scripts": {
     "dev": "vercel dev"
   },

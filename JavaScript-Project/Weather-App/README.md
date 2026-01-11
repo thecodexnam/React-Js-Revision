@@ -1,6 +1,11 @@
-# Weather App
+# Weather App 🌤️
 
-A beautiful weather application with secure API key handling.
+A beautiful, modern weather application with secure API key handling and smooth animations.
+
+🔗 **Live Demo:** [Add your Vercel URL here after deployment]
+
+![Weather App](https://img.shields.io/badge/Status-Live-success)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black)
 
 ## 🚀 Setup Instructions
 
