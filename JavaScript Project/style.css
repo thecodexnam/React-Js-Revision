@@ -4,7 +4,46 @@
     box-sizing: border-box;
 }
 
-.container{
+/* .nav{
+    background-color: black;
+    height: 10vh;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    padding: 30px 70px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:300) {
+    body{
+        background-color: aqua;
+    }
+} */
+
+
+body{
+    background-color: aquamarine;
+}
+@media only screen and (max-width:1200px){
+    body{
+        background-color: brown;
+    }
+}
+
+@media only screen and (max-width:400px){
+    body{
+        background-color: rgb(170, 236, 39);
+    }
+}
+
+
+
+/* .container{
     height: 50vh;
     background-color: blue;
     display: grid;
@@ -23,5 +62,5 @@
 .box{
     background-color:aqua;
     border: 2px solid black;
-}
+} */
 
