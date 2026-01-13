@@ -1,12 +1,24 @@
-let arr = [10,45,67,89,23,12];
-
-const result = arr.find((item)=>item>12)
-console.log(result)
-
-const result1 = arr.findIndex((item)=>item>12)
-console.log(result1)
-
-const result2 = arr.findLast((item)=>item>12)
-console.log(result2)
+// Heap Vs Stack Allocation in JavaScript
+//Heap - Heap is used for dynamic allocation it is referenceType
+//Stact - Stack is used for static allocation, it is primitive type
 
 
+//Heap Example
+let obj = {
+    Name:"Naman",
+    course:"BCA"
+}
+console.log(obj.Name);
+
+let obj1 = obj;
+obj1.Name = "Rohan"
+console.log(obj.Name);
+console.log(obj1.Name)
+
+// Stack
+
+let a = "Karan"
+let b = a;
+b = "Mohit";
+console.log(a);
+console.log(5%10);
