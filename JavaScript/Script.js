@@ -44,13 +44,25 @@
 
 // console.log("Wrong attempts:", arr);
 
-let a = "Naman"
-let b = "Yadav"
-let arr = [12,122,123,23,24,32]
+// let a = "Naman"
+// let b = "Yadav"
+// let arr = [12,122,123,23,24,32]
 
-let arr1 = arr.toString()
-console.log(arr1)
-console.log(arr)
+// let arr1 = arr.toString()
+// console.log(arr1)
+// console.log(arr)
+
+let arr = [
+    { Name: "Naman",
+      course:["BCA","NIELIT"] 
+    },
+    { Name: "Vishnu",
+      course:"BCa"  
+    }
+]
+
+
+
 
 
 
