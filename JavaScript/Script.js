@@ -52,15 +52,36 @@
 // console.log(arr1)
 // console.log(arr)
 
-let arr = [
-    { Name: "Naman",
-      course:["BCA","NIELIT"] 
-    },
-    { Name: "Vishnu",
-      course:"BCa"  
-    }
-]
+// let arr = [
+//     { Name: "Naman",
+//       course:["BCA","NIELIT"] 
+//     },
+//     { Name: "Vishnu",
+//       course:"BCa"  
+//     }
+// ]
 
+const TVD = ['Stefen','Damon','Elena','Caroline']
+
+let num = [21,32,43,54,65,76]
+let array = ['Naman','Yadav',123,true]
+
+
+for(const [Index,characters] of TVD.entries()){
+    console.log(Index,characters);
+}
+
+array.forEach(element => {
+    console.log(`Hello, ${element}`);
+});
+
+array.map((element)=>{
+    console.log(`Hi, ${element}`);
+});
+
+num.filter((element)=>{
+    console.log(element/3);
+});
 
 
 
