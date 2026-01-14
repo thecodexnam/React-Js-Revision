@@ -1,32 +1,56 @@
-// // Heap Vs Stack Allocation in JavaScript
-// //Heap - Heap is used for dynamic allocation it is referenceType
-// //Stact - Stack is used for static allocation, it is primitive type
 
 
-// //Heap Example
-// let obj = {
-//     Name:"Naman",
-//     course:"BCA"
+// if(val>=10 && val <=20){
+//     console.log("person lies between 10 and 20")
 // }
-// console.log(obj.Name);
+// else{
+//     console.log("person not lies between 10 and 20")
+// }
 
-// let obj1 = obj;
-// obj1.Name = "Rohan"
-// console.log(obj.Name);
-// console.log(obj1.Name)
 
-// // Stack
+// function checkRange(value, rangeStart, rangeEnd) {
+//     if (value >= rangeStart && value <= rangeEnd) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
-// let a = "Karan"
-// let b = a;
-// b = "Mohit";
-// console.log(a);
-// console.log(5%10);
+// if (checkRange(val, 10, 20)) {
+//     console.log("person lies between 10 and 20");
+// } else {
+//     console.log("person not lies between 10 and 20");
+// }
 
-function print(){
-    var a = "Naman"
-    console.log("Hello ",a)
-}
 
-print()
-console.log(a);
+// function add(a,b){
+//     console.log("I have both "+a,b)
+// }
+
+// add("Hindi","Hindi Grammer")
+
+
+// let correctNumber = 7;
+// let userNumber;
+// let arr = [];
+
+// do {
+//     userNumber = Number(prompt("Enter the correct number"));
+
+//     if (userNumber !== correctNumber) {
+//         arr.push(userNumber);   3
+//     }
+// } while (userNumber !== correctNumber);
+
+// console.log("Wrong attempts:", arr);
+
+let a = "Naman"
+let b = "Yadav"
+let arr = [12,122,123,23,24,32]
+
+let arr1 = arr.toString()
+console.log(arr1)
+console.log(arr)
+
+
+
