@@ -32,12 +32,16 @@ console.log("Naman Yadav")
 */
 
 
- function mynam(){
-    console.log("This variable is declared from the mynam function")
-}
+// function mynam(nam){
+//     console.log("This variable is declared from the mynam function", nam)
+// }
 
-let a = mynam()
-console.log(a);
+// let a = mynam('Naman')
 
+
+let name = "Naman"
+// console.log(name.charAt(2));
+// console.log(name.indexOf('n'));
+console.log(name.includes('man'));
 
 
