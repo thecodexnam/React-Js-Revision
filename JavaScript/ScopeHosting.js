@@ -39,9 +39,6 @@ console.log("Naman Yadav")
 // let a = mynam('Naman')
 
 
-let name = "Naman"
-// console.log(name.charAt(2));
-// console.log(name.indexOf('n'));
-console.log(name.includes('man'));
+
 
 
